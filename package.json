@@ -1,0 +1,45 @@
+{
+  "name": "currency-converter-api",
+  "version": "1.0.0",
+  "description": "API de Conversión de Monedas con FeathersJS, MongoDB, RabbitMQ y generación de PDFs",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": ["feathersjs", "mongodb", "rabbitmq", "currency", "converter"],
+  "author": "Developer",
+  "license": "MIT",
+  "dependencies": {
+    "@feathersjs/feathers": "^5.0.0",
+    "@feathersjs/express": "^5.0.0",
+    "@feathersjs/socketio": "^5.0.0",
+    "@feathersjs/configuration": "^5.0.0",
+    "@feathersjs/errors": "^5.0.0",
+    "mongoose": "^8.0.0",
+    "joi": "^17.11.0",
+    "amqplib": "^0.10.3",
+    "axios": "^1.6.0",
+    "pdfmake": "^0.2.7",
+    "puppeteer": "^21.5.0",
+    "html-pdf-node": "^1.0.8",
+    "node-cron": "^3.0.3",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "compression": "^1.7.4",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3",
+    "@types/jest": "^29.5.8"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": ["src/**/*.js", "!src/app.js"]
+  }
+}
