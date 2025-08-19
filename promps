@@ -1,0 +1,26 @@
+IA utilizada: ChatGPT Prompt:
+“Genérame la estructura base de un proyecto en Node.js con FeathersJS para exponer APIs REST. 
+Incluye configuración inicial con MongoDB usando Mongoose y Joi para validación. Dame un ejemplo de cómo organizar carpetas para mantener buenas prácticas.”
+
+IA utilizada: Deepseek Prompt:
+“Necesito un servicio en FeathersJS llamado /rates que: 
+
+Al hacer GET consulte MongoDB y devuelva las tasas actuales.
+Al hacer POST actualice manualmente una tasa específica.
+Además debe conectarse a APIs externas como CoinGecko y OpenExchangeRates para guardar tasas actualizadas en MongoDB.
+Dame ejemplos de controladores y esquemas con Mongoose.”
+
+IA utilizada: v0 by Vercel Prompt:
+“Enséñame cómo publicar un mensaje en RabbitMQ cada vez que se realice una conversión. 
+Quiero que el mensaje contenga: {from, to, amount, result, timestamp}. Usa amqplib y una cola llamada conversions_queue.”
+
+IA utilizada: v0 by Vercel Prompt:
+“Crea un cron job en Node.js que cada hora consulte CoinGecko y OpenExchangeRates para actualizar las tasas en MongoDB. 
+Debe integrarse con el servicio /rates.”
+
+IA utilizada: ChatGPT Prompt:
+“Escríbeme un ejemplo de README profesional para un challenge backend. Debe incluir:
+Requisitos de instalación (Node, MongoDB Atlas, RabbitMQ)
+Pasos para correr el proyecto localmente
+Ejemplos de endpoints (/rates, /convert, /report)
+Descripción del uso de IA en el desarrollo.”
